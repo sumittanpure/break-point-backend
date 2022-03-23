@@ -6,7 +6,7 @@ from routes.all_routes import router
 
 
 app = FastAPI(
-    title="Pump App Backend API"
+    title="BreakPoint Backend API"
 )
 
 

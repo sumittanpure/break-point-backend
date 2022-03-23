@@ -15,10 +15,11 @@ config = {
 email = "chinmay@simplified.co"
 password = "test123"
 
+
 try:
     firebase = pyrebase.initialize_app(config)
-    auth = firebase.auth()
-    user = auth.sign_in_with_email_and_password(email, password)
+    firebase_auth = firebase.auth()
+    # user = firebase_auth.sign_in_with_email_and_password(email, password)
     db = firebase.database()
 except Exception as e:
     logger.debug(f"Error Initialising Firebase Connection: {e}")
